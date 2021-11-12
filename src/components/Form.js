@@ -1,10 +1,14 @@
 import React from "react";
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
-  //寫JS 跟方法
+  //Function: get the value entered in the input component
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
+  // Function: when click the submit button, excute 3 things below:
+  // 1. prevent it to reload web page when the event happens
+  // 2. get input text and set some init values as anarray
+  // 3. clear the inpur text
   const submitTodoHandler = (e) => {
     e.preventDefault();
     setTodos([
@@ -13,6 +17,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     ]);
     setInputText("");
   };
+  
   const statusHandler = (e) => {
     setStatus(e.target.value);
   };

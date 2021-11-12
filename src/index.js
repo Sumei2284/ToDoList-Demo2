@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//render(要渲染到畫面的元素,元素要放在哪個Html元素內)
 ReactDOM.render(
   <React.StrictMode>
     <App />
