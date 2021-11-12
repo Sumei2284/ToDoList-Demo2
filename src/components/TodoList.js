@@ -1,7 +1,16 @@
 import React from "react";
-//import components
-import Todo from "./Todo.js";
+//import components from todo.js
+import Todo from "./Todo";
 
+/*
+  Create a todolist item which contains 5 components below: 
+  key: the private key for list object, and usually use id as the key. 
+  Actually in Todo.js, we do not need to do anything on key.
+  todo: the 
+  setTodos:
+  todos:
+  text:
+*/
 const TodoList = ({ todos, setTodos, filteredTodos }) => {
 
     return (

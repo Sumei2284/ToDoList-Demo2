@@ -1,8 +1,9 @@
 import React from "react";
 
 const Todo = ({ text, todo, todos, setTodos }) => {
-    //Events
+    //Events: delete and complete
     const deleteHandler = () => {
+        //將篩選到的todo物件之id
         setTodos(todos.filter((el) => el.id !== todo.id));
     };
     const completeHandler = () => {
